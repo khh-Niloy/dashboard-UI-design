@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <!-- outter -->
+    <div class="w-screen h-screen flex items-center justify-center" style="background-color: #5c6aed;">
+        
+        <!-- inner -->
+        <div class="w-[65%] h-[85%] rounded-2xl bg-white shadow-2xl grid grid-cols-12 grid-rows-10 relative">
+
+
+            <!-- left side menu section -->
+            <div class="col-span-1 row-span-full w-[77%]">
+            
+            <!-- starts here 
+            logo -->
+            <div class="w-[100%] h-full border-r border-slate-200 flex flex-col items-center cursor-pointer">
+                <img class="w-[60%] mt-2" src="/image/logo.png" alt="">
+                <h1 class="font-inter font-medium text-sky-600" style="font-size: 7px;">HRMS</h1>
+
+                <!-- icon set 1 -->
+                <div class="flex flex-col items-center mt-6 gap-4">
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-gauge-high text-xs text-neutral-400/70"></i>
+                        <h1 class="font-inter font-bold mt-1 text-black/40" style="font-size: 5px;">Dashboard</h1>
+                    </div>
+
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-building text-xs text-neutral-400/70"></i>
+                        <h1 class="font-inter font-bold mt-1 text-black/40" style="font-size: 5px;">Org.</h1>
+                    </div>
+
+                    <div class="flex flex-col items-center cursor-pointer bg-sky-100/20 rounded-md p-1.5 shadow-md">
+                        <i class="fa-solid fa-calendar-days text-xs text-blue-500"></i>
+                        <h1 class="font-inter font-bold mt-1 text-blue-500" style="font-size: 5px;">Calendar</h1>
+                    </div>
+
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-car-side text-xs text-neutral-400/70"></i>
+                        <h1 class="font-inter font-bold mt-1 text-black/40" style="font-size: 5px;">Parking</h1>
+                    </div>
+
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-briefcase text-xs text-neutral-400/70"></i>
+                        <h1 class="font-inter font-bold mt-1 text-black/40" style="font-size: 5px;">Recruit</h1>
+                    </div>
+
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-comments text-xs text-neutral-400/70"></i>
+                        <h1 class="font-inter font-bold mt-1 text-black/40" style="font-size: 5px;">Messages</h1>
+                    </div>
+                </div>
+
+
+                <!-- icon set 2 -->
+                <div class="flex flex-col items-center mt-20 gap-4">
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-circle-question text-xs text-neutral-400/70"></i>
+                        <h1 class="font-Poppins font-bold mt-1 text-black/40" style="font-size: 5px;">Help</h1>
+                    </div>
+
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <i class="fa-solid fa-gear text-xs text-neutral-400/70"></i>
+                        <h1 class="font-Poppins font-bold mt-1 text-black/40" style="font-size: 5px;">Settings</h1>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+            <!-- top side bar -->
+            <div class="col-span-11 h-[100%] flex justify-between mr-6">
+
+                <!-- left text -->
+                <div class="ml-3 h-full flex gap-6 items-center font-bold font-inter mt-0.5" style="font-size: 8px;">
+                    <h1 class="text-black/80 cursor-pointer">Dashboard</h1>
+                    <h1 class="text-black/80 cursor-pointer">Leave</h1>
+                    <h1 class="text-blue-500 bg-sky-100/20 rounded-md py-1.5 px-2.5 cursor-pointer shadow-md">Attendance</h1>
+                    <h1 class="text-black/80 cursor-pointer">Performance</h1>
+                </div>
+
+                <!-- right side -->
+                <div class="mr-4 flex items-center gap-6 relative">
+
+                    <!-- search -->
+                    <div class="flex items-center bg-neutral-200/40 py-1.5 px-2 rounded-md">
+                        <i class="fa-solid fa-magnifying-glass text-xs text-black/10  cursor-pointer"></i>
+                        <h1 class="font-inter font-medium ml-2 text-black/20  cursor-pointer" style="font-size: 9px;">Search anything...</h1>
+                        <i class="fa-solid fa-sliders text-xs text-black/70 ml-6  cursor-pointer"></i>
+                    </div>
+
+                    <div class="absolute w-1.5 h-1.5 border border-white bg-red-500 rounded-full top-4 right-20 -translate-y-1"
+                    style="transform: translateX(2px);"></div>
+                    <i class="fa-solid fa-message text-xs text-blue-500  cursor-pointer"></i>
+                    <div class="absolute w-1.5 h-1.5 border border-white bg-red-500 rounded-full top-4 right-10 -translate-y-1"
+                    style="transform: translateX(-3px);"></div>
+                    <i class="fa-solid fa-bell text-sm text-blue-500  cursor-pointer"></i>
+
+                    <div class="w-5 h-5"><img class="rounded-full  cursor-pointer" src="/image/profile.jpeg" alt=""></div>
+                    <i class="fa-solid fa-caret-down absolute -right-3 text-xs text-black/20  cursor-pointer"></i>
+
+                </div>
+
+            </div>
+            
+            <hr class="border-slate-200 absolute top-10 translate-y-1 mt-2.5" style="margin-left: 2.9rem; transform: translateX(6px); width: 93.5%;">
+
+
+
+            <!-- main body -->
+            <div class="col-start-2 col-end-13 row-start-2 row-end-13 mt-4 mr-3">
+
+                <!-- header -->
+                <header class="flex justify-between items-start font-inter">
+                    <div class="">
+                        <h1 class="font-bold text-sm text-slate-800">Good afternoon, Niloy!</h1>
+                        <p class="mt-1 text-slate-800/80" style="font-size: 8px;">You have 2 leave request pending</p>
+                    </div>
+
+                    <div class="flex items-center bg-slate-100/20 text-slate-900 shadow-md py-1 px-3 rounded-md">
+                        <div class="mr-3">
+                            <h2 style="font-size: 8px;">Current time</h2>
+                            <h1 class="font-bold" style="font-size: 9px;">26 Sept 2024, 12:10 PM</h1>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </header>
+
+
+                <!-- grid section -->
+                <div class="grid grid-cols-12 grid-rows-12 mt-5 gap-3 max-h-44 font-inter">
+
+                    <!-- no 1 -->
+                    <div class=" row-start-1 row-end-13 col-span-4 rounded-md bg-white border border-black/10 p-3.5">
+                        <div class="flex justify-between">
+                            <h1 class="font-medium font-inter" style="font-size: 9px;">Today</h1>
+                            <h1 class="bg-red-600 text-white rounded-full font-inter" style="font-size: 7px; padding: 2px 4px 1.5px 4px;">Absent</h1>
+                        </div>
+                        <hr class="mt-2.5" style="border: 1px solid rgba(0, 0, 0, 0.043);">
+
+                        <div class="mt-2 flex justify-between">
+
+                            <!-- fingerprint -->
+                            <div>
+                                <i class="fa-solid fa-fingerprint text-blue-500"></i>
+                                <h1 class="mt-1 font-medium" style="font-size: 8px;">You dont have marked <br> yourself as present today!</h1>
+                                <h1 class="mt-2 font-medium pl-1" style="font-size: 8px; border-left: 1.5px solid red;">Time left : <span class="text-red-500 font-bold">56m 44s</span></h1>
+                            </div>
+
+
+                            <!-- progress bar -->
+                            <div>
+                                <div class="relative" style="width: 78px; height: 78px;">
+                                  <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Background Circle -->
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="2.5"></circle>
+                                    <!-- Progress Circle -->
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current" style="color: #FFD022;" stroke-width="2.5" stroke-dasharray="100.53" stroke-dashoffset="37.15" stroke-linecap="round"></circle>
+                                  </svg>
+                                
+                                  <!-- Percentage Text -->
+                                  <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
+                                    <h1 class="text-center text-sm font-bold">63%</h1>
+                                    <p class="whitespace-nowrap text-black/50 font-medium" style="font-size: 7px;">in office</p>
+                                    <p class="whitespace-nowrap uppercase mt-1 font-bold" style="font-size: 7px; color: #FFD022;">Poor</p>
+                                  </div>
+                                </div>
+                            </div>                              
+                        </div>
+
+                        <button class="w-full bg-blue-500 rounded-md text-white font-normal py-2 mt-2" style="font-size: 8px;">Mark Present</button>
+                    </div>
+
+                    <div class="row-start-1 row-end-7 bg-white border border-black/10 p-3 col-span-2 rounded-md flex flex-col items-start">
+                        <i class="fa-solid fa-clock-rotate-left mb-1 text-blue-500 text-sm"></i>
+                        <h2 class="my-0.5 font-medium" style="font-size: 9px;">Average hours</h2>
+                        <h1 class="text-sm font-semibold">7h 17mins</h1>
+                    </div>
+
+                    <div class="bg-white border border-black/10 row-start-1 row-end-7 col-span-2 rounded-md flex flex-col items-start p-3">
+                        <i class="fa-solid fa-arrow-right-from-bracket mb-1 text-blue-500 text-sm"></i>
+                        <h2 class="my-0.5 font-medium" style="font-size: 9px;">Average check-in</h2>
+                        <h1 class="text-sm font-semibold">10:33 AM</h1>
+                    </div>
+
+                    <!-- no 4 -->
+                    
+                    <div class="bg-white border border-black/10 p-3.5 row-start-1 row-end-13 col-span-4 rounded-md">
+                        <div class="flex justify-between">
+                            <h1 class="font-medium font-inter" style="font-size: 9px;">My Attendance</h1>
+                            <h1 class="font-inter font-bold text-blue-500" style="font-size: 8px;">View Stats</h1>
+                        </div>
+                        <hr class="mt-2.5" style="border: 1px solid rgba(0, 0, 0, 0.043);">
+
+
+                        <div class="flex justify-between items-start mt-3.5">
+
+                            <!-- dotted -->
+                            <div class="">
+                                <div class="flex items-center">
+                                    <div class="w-1 h-1 rounded-full mr-1.5" style="background-color: #1cc57e;"></div>
+                                    <h1 class="font-bold" style="font-size: 8px;">1,031 <span class="text-black/40 font-semibold">on time</span></h1>
+                                </div>
+        
+                                <div class="flex items-center mt-3">
+                                    <div class="w-1 h-1 rounded-full mr-1.5" style="background-color: #FFD022;"></div>
+                                    <h1 class="font-bold" style="font-size: 8px;">191 <span class="text-black/40 font-semibold">work from home</span></h1>
+                                </div>
+        
+                                <div class="flex items-center mt-3">
+                                    <div class="w-1 h-1 rounded-full mr-1.5" style="background-color: #fe2929;"></div>
+                                    <h1 class="font-bold" style="font-size: 8px;">212 <span class="text-black/40 font-semibold">late attendance</span></h1>
+                                </div>
+        
+                                <div class="flex items-center mt-3">
+                                    <div class="w-1 h-1 rounded-full mr-1.5" style="background-color: #961af5;"></div>
+                                    <h1 class="font-bold" style="font-size: 8px;">66 <span class="text-black/40 font-semibold">absent</span></h1>
+                                </div>
+                            </div>
+
+                            <!-- progess bar 2 -->
+                            <div class="relative" style="width: 85px; height: 85px;">
+                                <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                  <!-- Background Circle -->
+                                  <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200" stroke-width="2.5"></circle>
+                                  
+                                  <!-- Red Segment (20%) -->
+                                  <circle cx="18" cy="18" r="16" fill="none" class="stroke-current" style="color: #F44336;" stroke-width="2.5" stroke-dasharray="10.11 10.42" stroke-linecap="round"></circle>
+                                  
+                                  <!-- Yellow Segment (30%) -->
+                                  <circle cx="18" cy="18" r="16" fill="none" class="stroke-current" style="color: #FFD022;" stroke-width="2.5" stroke-dasharray="30.16 20.37" stroke-linecap="round"></circle>
+                                  
+                                  <!-- Green Segment (50%) -->
+                                  <circle cx="18" cy="18" r="16" fill="none" class="stroke-current" style="color: #4CAF50;" stroke-width="2.5" stroke-dasharray="50.26 50.27" stroke-linecap="round"></circle>
+                                </svg>
+                              
+                                <!-- Percentage Text -->
+                                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
+                                  <h1 class="text-center text-sm font-bold">1,434</h1>
+                                  <p class="whitespace-nowrap text-black/50 font-medium" style="font-size: 7px;">/1500</p>
+                                </div>
+                              </div>
+                              
+                        </div>
+
+                        <div class="flex mt-3">
+                            <i class="fa-solid fa-circle-check font-medium" style="font-size: 10px; color: #1cc57e;"></i>
+                            <h1 class="ml-1" style="font-size: 8px;">Better than <span class="font-bold">91.3%</span> employess!</h1>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bg-white border border-black/10 row-start-7 row-end-13 col-span-2 rounded-md flex flex-col items-start p-3">
+                        <i class="fa-regular fa-clock mb-1  text-sm" style="color: #1cc57e;"></i>
+                        <h2 class="my-0.5 font-medium " style="font-size: 9px;">On-time arrival</h2>
+                        <h1 class="font-semibold" style="font-size: 15px; color: #1cc57e;">98.56%</h1>
+                    </div>
+                    <div class="bg-white border border-black/10 row-start-7 row-end-13 col-span-2 rounded-md flex flex-col items-start p-3">
+                        <i class="fa-solid fa-arrow-right-from-bracket mb-1 rotate-180 text-red-500 text-sm"></i>
+                        <h2 class="my-0.5 font-medium" style="font-size: 9px;">Average check-out</h2>
+                        <h1 class="text-sm font-semibold">19:12 PM</h1>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+</html>
