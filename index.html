@@ -14,7 +14,7 @@
     <div class="w-screen h-screen flex items-center justify-center" style="background-color: #5c6aed;">
         
         <!-- inner -->
-        <div class="w-[65%] h-[85%] rounded-2xl shadow-2xl grid grid-cols-12 grid-rows-10 relative" style="background-color: #faf8f8;">
+        <div class="w-[65%] h-[85%] rounded-2xl shadow-2xl grid grid-cols-12 grid-rows-10 relative drop-shadow-2xl" style="background-color: #faf8f8;">
 
 
             <!-- left side menu section -->
@@ -121,7 +121,7 @@
             <main class="col-start-2 col-end-13 row-start-2 row-end-13 mt-4 mr-3">
 
                 <!-- header -->
-                <header class="flex justify-between items-start font-inter">
+                <header class="flex justify-between items-start font-inter relative">
                     <div class="">
                         <h1 class="font-bold text-sm text-slate-800">Good afternoon, Niloy!</h1>
                         <p class="mt-0.5 text-slate-800/80 font-medium" style="font-size: 8px;">You have 2 leave request pending</p>
@@ -138,6 +138,13 @@
                         </div>
                     </div>
                 </header>
+
+
+                <!-- floating div -->
+                 <div class="absolute bg-white w-auto h-8 flex items-center pt-2 pb-1.5 px-3 rounded-lg drop-shadow-xl font-inter" style="right: -80px; top: 66px;">
+                    <i class="fa-solid fa-hourglass text-primary" style="font-size: 15px;"></i>
+                    <h1 class="font-medium whitespace-nowrap ml-1.5" style="font-size: 7px; line-height: 1.4;">Every second <br> counts!</h1>
+                 </div>
 
 
                 <!-- grid section -->
@@ -270,7 +277,7 @@
                         <h1 class="font-semibold" style="font-size: 15px; color: #1cc57e;">98.56%</h1>
                     </div>
 
-                    
+
                     <div class="bg-white border border-black/5 row-start-7 row-end-13 col-span-2 rounded-md flex flex-col items-start p-3">
                         <i class="fa-solid fa-arrow-right-from-bracket mb-1 rotate-180 text-red-500 text-sm"></i>
                         <h2 class="my-0.5 font-medium" style="font-size: 9px;">Average check-out</h2>
